@@ -1,6 +1,4 @@
 section{
-    margin: 0 auto;
-    margin-top: 20px;
     display: flex;
     width: 350px;
     flex-wrap: wrap;
@@ -14,7 +12,7 @@ section{
     width: 100%;
     background-color: rgb(45, 45, 45);
     height: 60px;
-    font-size: 20px;
+    font-size: 30px;
     color: whitesmoke;
 }
 .botao{
@@ -37,4 +35,22 @@ section{
 }
 .clear{
     color: rgb(242, 242, 242);
+}
+
+
+@media screen and (max-width: 700px){
+    .tela{
+        height: 0;
+        padding: 20% 0;
+    }
+    .botao{
+        padding: 8% 0;
+    }
+    .clear, .erase{
+        padding: 8% 0;
+    }
+    section{
+        width: 100%;
+        height: 100%;
+    }
 }
