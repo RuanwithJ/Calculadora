@@ -12,7 +12,9 @@ calculadora.addEventListener('click', function(e){
         apaga(tela);
     if(e.target.classList[0]=='num' || e.target.classList[0] == 'ponto')
         digitaNumero(e.target.textContent, tela);
-    if(e.target.classList[2]=='operacao'){
+    if(tela.texto=='' && e.target.classList[0]=='sub')
+            tela.texto = "-";
+    else if(e.target.classList[2]=='operacao'){
         variaveis.x = Number(tela.texto, 10);
         limpaTela(tela);
         variaveis.oper = e.target.classList[0];
